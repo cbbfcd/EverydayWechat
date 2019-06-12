@@ -225,8 +225,8 @@ class GFWeather:
             dictum_msg = self.get_lovelive_info()
         elif self.dictum_channel == 4:
             dictum_msg = self.get_hitokoto_info()
-        if not dictum_msg:
-            dictum_msg = '我们一直在一起，所以最后也想在你身旁'
+        else:
+            dictum_msg = ''
 
         for girlfriend in self.girlfriend_list:
             city_code = girlfriend.get('city_code')
